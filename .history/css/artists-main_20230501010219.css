@@ -1,0 +1,13 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    
+}
+.artist{
+    display: flex;
+    fl
+    margin-left: 5vw;
+    align-items: center;
+    justify-content: center;
+}

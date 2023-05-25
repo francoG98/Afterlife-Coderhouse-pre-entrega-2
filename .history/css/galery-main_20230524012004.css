@@ -1,0 +1,13 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+}
+.video{
+    width: 45vw;
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+}

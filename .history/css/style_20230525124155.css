@@ -1,0 +1,47 @@
+*{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+header div{
+    width: 95vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    .logo{
+        width: 100%;
+    }
+}
+header{
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .element-navbar-top{
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+main{
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    .section-main{
+        display: flex;
+        flex-flow: column;
+        .img-main{
+            max-width: 100vw;
+            text-align: center;
+        }
+    }
+    }

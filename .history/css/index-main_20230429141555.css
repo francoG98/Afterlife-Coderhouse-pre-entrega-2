@@ -1,0 +1,33 @@
+.section-main{
+    display: flex;
+    flex-flow: column;
+}
+.text-afterlife{
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+    font-size: 60px;
+    text-align: justify;
+}
+.navbar-footer{
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+.afterlife_logo_footer{
+    width: 33%;
+    justify-content: left;
+}
+.p-footer{
+    margin-top: 20vh;
+    width: 33%;
+    
+}
+.li-footer{
+    
+    width: 50%;
+    justify-content: center;
+    align-items: center
+}

@@ -1,0 +1,12 @@
+main{
+    display: flex;
+    fle
+    margin-top: 3vh;
+    margin-left: 3.5vw;
+    margin-right: 3.5vw;
+}
+.video{
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+}

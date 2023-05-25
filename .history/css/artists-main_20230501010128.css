@@ -1,0 +1,10 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.artist{
+    margin-left: 5vw;
+    align-items: center;
+}

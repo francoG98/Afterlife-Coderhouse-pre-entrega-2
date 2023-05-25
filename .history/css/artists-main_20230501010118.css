@@ -1,0 +1,9 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.artist{
+    margin-left: 5;
+    align-items: center;
+}

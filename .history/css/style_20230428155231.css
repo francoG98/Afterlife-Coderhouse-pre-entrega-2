@@ -1,0 +1,76 @@
+*{
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 45px;
+    margin-top: 30px;
+    vertical-align: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font: bold;
+
+}
+p{
+    color: white;
+    font-size: 30px;
+    text-align: justify;
+}
+header{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 10px;
+    width: 40vw;
+}
+.navbar-header{
+    width: 60vw;
+    text-align: right;
+    justify-content: space-between;
+}
+.section-main{
+    fle
+}
+.img-main{
+    min-width: 1200px;
+}
+.navbar-footer{
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+.afterlife_logo_footer{
+    width: 33%;
+}
+.p-footer{
+    width: 33%;
+}
+.li-footer{
+    
+    width: 50%;
+    justify-content: center;
+    align-items: center
+}

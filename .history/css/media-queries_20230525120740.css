@@ -1,0 +1,6 @@
+@media (max-width: 200px
+) {
+    header{
+        flex-direction: column;
+    }
+}

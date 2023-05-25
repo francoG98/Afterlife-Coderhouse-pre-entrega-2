@@ -1,0 +1,7 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.show{
+    width: 45;
+}
