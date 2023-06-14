@@ -1,3 +1,7 @@
+:root{
+    --white: #ffffff;
+    --salmon: #F25D61;
+}
 body{
     background-color: black;
     margin: 1rem;
@@ -5,7 +9,13 @@ body{
 }
 a{
     text-decoration: none;
-    color: white;
+    color: var(--white);
+    
+}
+@mixin flex-row-evenly{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 header{
     margin: 1rem;
@@ -21,12 +31,16 @@ header{
         .navbar-top{
             width: 65vw;
             list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
+            @include flex-row-evenly();
             .element-navbar-top{
                 align-items:center;
                 font-size: 2rem;
+                transition: all 1.5s;
+                    &:hover{
+                        color: var(--salmon);
+                        font-size: 2.2rem;
+                    }
+                
             }
         }
 
@@ -43,7 +57,7 @@ main{
             width: 90vw;
         }
         .text-afterlife{
-            color: white;
+            color: var(--white);
             font-size: 1.5rem;
             text-align: justify;
         }
@@ -64,16 +78,20 @@ main{
             width: 50vw;
             height: 60vh;
             filter: grayscale(100%);
+            transition: filter 1s;
+                &:hover{
+                    filter: none;
+                } 
         }
         .artist_name{
             margin-top: 1vh;
-            color: white;
+            color: var(--white);
             font-size: 2rem;
             font-style: italic;
         }
         .artist_info{
             margin-top: 1vh;
-            color: white;
+            color: var(--white);
             font-size: 1.5rem;
             text-align: justify;
         }
@@ -188,6 +206,62 @@ footer{
     }
     
 }
+@media (max-width:600.01px) {
+    header{
+        .navbar{
+            .navbar-top{
+                .element-navbar-top{
+                    font-size: 1rem;
+                    transition: color 1.5s;
+                    &:hover{
+                        color: var(--salmon);
+                    }
+                }
+            }
+        }
+    }
+    .section-main{
+        .text-afterlife{
+            width: 90vw;
+            .text{
+                font-size: 1rem;
+            }
+        }
+    }
+    .main-artists{
+        .artist{
+            .artist_name{
+                font-size: 1.75rem;
+            }
+            .artist_info{
+                font-size: 1rem;
+            }
+        }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .navbar{
+            display: none;
+        }
+        .logo-footer{
+            display: flex;
+            justify-content: center;
+            width: 75vw;
+            .afterlife_logo_footer{
+                height: 35vh;
+            }
+        }
+        .p-footer{
+            margin-top: 5vh;
+            width: 75vw;
+            .text_footer{
+                font-size: 1rem;
+            }
+        }
+    }
+} 
+}
 @media (max-width: 320.01px){
     body{
         margin: auto;
@@ -214,7 +288,6 @@ footer{
     }
     .section-main{
         .text-afterlife{
-            width: 90vw;
             .text{
                 font-size: 0.8rem;
             }
@@ -274,33 +347,5 @@ footer{
         }
         
     }
-    footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .navbar{
-            display: none;
-        }
-        .logo-footer{
-            display: flex;
-            justify-content: center;
-            width: 75vw;
-            .afterlife_logo_footer{
-                height: 35vh;
-            }
-        }
-        .p-footer{
-            margin-top: 5vh;
-            width: 75vw;
-            .text_footer{
-                font-size: 1rem;
-            }
-        }
-    }
+    
 }
-
-
-
-
-
-

@@ -1,204 +1,256 @@
-*{
-    background-color: #000000;
-    margin: 0px;
-    padding: 0px;
-    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
-    box-sizing: border-box;
-    
-}
-a{
-    text-decoration: none;
-    color: white;
-    
-}
-p{
-    color: white;
-    font-size: 1em;
-    text-align: justify;
-}
-header div{
-    width: 95vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    .logo{
-        width: 100%;
-        margin-left: 3vw;
-    }
-}
-header{
-    .navbar{
-        display: flex;
-        flex-direction: column;
+:root {
+  --white: #ffffff;
+  --salmon: #F25D61; }
+
+body {
+  background-color: black;
+  margin: 1rem;
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+a {
+  text-decoration: none;
+  color: var(--white); }
+
+header {
+  margin: 1rem;
+  margin-left: 2vw;
+  display: flex;
+  flex-direction: row; }
+  header .logo {
+    max-width: 30vw;
+    margin-top: 2vh; }
+  header .navbar {
+    width: 65vw; }
+    header .navbar .navbar-top {
+      width: 65vw;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly; }
+      header .navbar .navbar-top .element-navbar-top {
         align-items: center;
-        .element-navbar-top{
-            font-size: 2em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-}
-main{
-    margin-top: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .section-main{
-        display: flex;
-        flex-flow: column;
-        .img-main{
-            width: 100vw;
-            text-align: center;
-        }
-        .text-afterlife{
-            margin: 2vh;
-            width: 95vw;
-        }
-    }
-}
-.main-artists{
-    margin-left: 5vw;
-    margin-right: 5vw;
-    .artist{
-        display: flex;
-        flex-direction: column;
-        margin-left: 2vw;
-        margin-right: 2vw;
-        margin-bottom: 3vh;
-        align-items: center;
-        justify-content: center;
-        .artist_photo{
-            width: 90vw;
-            height: 50vh;
-            filter: grayscale(100%);
-        }
-        .artist_name{
-            margin-top: 1vh;
-            font-size: 1.5rem;
-            font-style: italic;
-        }
-        .artist_info{
-            margin-top: 1vh;
-            font-size: 1rem;            ;
-        }
-    }
-}
-footer{
+        font-size: 2rem;
+        transition: all 1.5s; }
+        header .navbar .navbar-top .element-navbar-top:hover {
+          color: var(--salmon);
+          font-size: 2.2rem; }
+
+main .section-main {
+  margin: 1rem;
+  margin-left: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  main .section-main .img-main {
+    width: 90vw; }
+  main .section-main .text-afterlife {
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: justify; }
+
+.main-artists {
+  margin-left: 5vw;
+  margin-right: 5vw; }
+  .main-artists .artist {
     display: flex;
     flex-direction: column;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 3vh;
+    align-items: center;
+    justify-content: center; }
+    .main-artists .artist .artist_photo {
+      width: 50vw;
+      height: 60vh;
+      filter: grayscale(100%);
+      transition: filter 1s; }
+      .main-artists .artist .artist_photo:hover {
+        filter: none; }
+    .main-artists .artist .artist_name {
+      margin-top: 1vh;
+      color: var(--white);
+      font-size: 2rem;
+      font-style: italic; }
+    .main-artists .artist .artist_info {
+      margin-top: 1vh;
+      color: var(--white);
+      font-size: 1.5rem;
+      text-align: justify; }
+
+.main-nextShows {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  justify-content: start; }
+  .main-nextShows .show {
+    width: 40vw;
+    height: 90vh;
+    margin: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; }
+    .main-nextShows .show .show_photo {
+      height: 70vh; }
+    .main-nextShows .show .show_title {
+      color: white;
+      margin-top: 1vh;
+      text-align: center; }
+    .main-nextShows .show .show_description {
+      color: white;
+      margin-top: 1vh;
+      text-align: justify; }
+
+.main-galery {
+  display: grid;
+  grid-template-columns: 45vw 45vw;
+  row-gap: 5vh; }
+  .main-galery .video {
+    width: 45vw;
+    margin-top: 4vh;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    display: flex;
+    justify-content: center; }
+
+.main-contact {
+  margin: 5rem; }
+  .main-contact .contact-form {
+    outline-width: 2px;
+    display: flex;
+    justify-content: center; }
+  .main-contact .label-form {
+    color: white;
+    width: 90vw;
+    margin-top: 3vh; }
+  .main-contact .input-form {
+    width: 85vw;
+    margin-bottom: 3vh;
+    color: white; }
+  .main-contact .legend-form {
+    color: white;
+    margin-bottom: 3vh; }
+  .main-contact .form_buttons {
+    display: flex;
+    justify-content: center; }
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3vh;
+  margin-left: 2vw;
+  margin-right: 2vw; }
+  footer .navbar {
+    width: 33%;
+    display: flex;
     justify-content: center;
-    .navbar{
-        display: none;
-    }
-    .logo-footer{
-        display: flex;
+    align-items: center; }
+    footer .navbar .navbar-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none; }
+    footer .navbar .li-footer {
+      width: 50%;
+      text-align: center;
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+      font-size: 2rem; }
+  footer .logo_footer {
+    width: 33%;
+    justify-content: left; }
+  footer .p-footer {
+    margin-top: 24vh;
+    width: 33%; }
+    footer .p-footer .text_footer {
+      text-align: center;
+      color: white;
+      font-size: 1.5rem; }
+
+@media (max-width: 600.01px) {
+  header .navbar .navbar-top .element-navbar-top {
+    font-size: 1rem;
+    transition: color 1.5s; }
+    header .navbar .navbar-top .element-navbar-top:hover {
+      color: var(--salmon); }
+  .section-main .text-afterlife {
+    width: 90vw; }
+    .section-main .text-afterlife .text {
+      font-size: 1rem; }
+  .main-artists .artist .artist_name {
+    font-size: 1.75rem; }
+  .main-artists .artist .artist_info {
+    font-size: 1rem; }
+  .main-artists footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-artists footer .navbar {
+      display: none; }
+    .main-artists footer .logo-footer {
+      display: flex;
+      justify-content: center;
+      width: 75vw; }
+      .main-artists footer .logo-footer .afterlife_logo_footer {
+        height: 35vh; }
+    .main-artists footer .p-footer {
+      margin-top: 5vh;
+      width: 75vw; }
+      .main-artists footer .p-footer .text_footer {
+        font-size: 1rem; } }
+
+@media (max-width: 320.01px) {
+  body {
+    margin: auto; }
+  header {
+    display: flex;
+    flex-direction: column; }
+    header .logo {
+      max-width: 90vw; }
+    header .navbar {
+      width: 85vw; }
+      header .navbar .navbar-top {
+        width: 90vw;
+        flex-direction: column;
         justify-content: center;
-        .afterlife_logo_footer{
-            width: 80vw;
-            height: 50vh;
-        }
-    }
-    .p-footer{
-        .text_footer{
-            display: flex;
-            justify-content: center;
-        }
-        
-    }
-}
-
-@media (min-width: 1024px) {
-    header div{
-        width: 35vw;
-        position: relative;
-    }
-    header ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        list-style-type: none;
-        width: 60vw;
-        
-    }
-    header{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-        .logo{
-            margin-left: 1vw;
-            position: absolute;
-            margin-top: 4vh;
-            width: 100%;
-        }
-        .navbar{
-            display: flex;
-            flex-direction: row;
-            margin-right: 2vw;
-            margin-top: 9vh;
-            width: 60vw;
-            justify-content: space-between;
-            .element-navbar-top{
-                font-size: 1.7rem;
-            }
-        }
-    }
-    .main-artists{
-        .artist{
-            margin-left: 5vw;
-            margin-right: 5vw;
-            .artist_photo{
-                width: 60vw;
-                height: 50vh;
-            }
-        }
-    }
-
-    footer{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 3vh;
-        margin-left: 2vw;
-        margin-right: 2vw;
-        .navbar{
-            width: 32vw;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:center;
-            align-items: center;
-            .li-footer{
-                width: 50%;
-                text-align: center;
-                margin-top: 2vh;
-                margin-bottom: 2vh;
-                font-size: 2em;
-            }
-        };
-        .logo-footer{
-            width: 32vw;
-            justify-content: center;
-            position: relative;
-            .afterlife_logo_footer{
-                width: auto;
-                height: auto;
-                
-            }
-        }
-        
-        .p-footer{
-            
-            margin-top: 24vh;
-            width: 33%;
-            font-size: 1.5rem;
-            .text_footer{
-                align-items: center;
-                
-            }
-        }
-        
-    }
-}
-
+        text-align: center; }
+        header .navbar .navbar-top .element-navbar-top {
+          font-size: 1rem; }
+  .section-main .text-afterlife .text {
+    font-size: 0.8rem; }
+  .main-artists .artist .artist_photo {
+    height: 30vh; }
+  .main-artists .artist .artist_name {
+    font-size: 1.5rem; }
+  .main-artists .artist .artist_info {
+    font-size: 1rem; }
+  .main-nextShows {
+    grid-template-columns: 80vw;
+    justify-content: center; }
+    .main-nextShows .show {
+      width: 80vw; }
+      .main-nextShows .show .show_photo {
+        width: 80vw; }
+      .main-nextShows .show .show_description {
+        font-size: 0.7rem; }
+  .main-galery {
+    grid-template-columns: 80vw;
+    justify-content: center; }
+    .main-galery .video {
+      display: flex;
+      justify-content: center;
+      width: 80vw; }
+  iframe {
+    width: 80vw;
+    height: 40vh; }
+  .main-contact {
+    margin: 2rem; }
+    .main-contact .contact-form {
+      margin-left: 5vw;
+      width: 75vw;
+      display: flex; }
+      .main-contact .contact-form .legend-form {
+        text-align: center; }
+      .main-contact .contact-form .input-form {
+        width: 70vw; } }
