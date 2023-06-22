@@ -82,7 +82,7 @@ main .section-main {
     flex-direction: column;
     justify-content: start; }
     .main-nextShows .show .show_photo {
-      min-height: 70vh; }
+      height: 70vh; }
     .main-nextShows .show .show_title {
       color: #ffffff;
       margin-top: 1vh;
