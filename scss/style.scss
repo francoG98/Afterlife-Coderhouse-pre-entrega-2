@@ -92,25 +92,28 @@ main{
     margin-bottom: 5vh;
     display: grid;
     grid-template-columns: 45vw 45vw;
-    justify-content: start;
     .show{
         width: 40vw;
-        height: 90vh;
+        height: 95vh;
         margin: 2vw;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
         display: flex;
         flex-direction: column;
+        justify-content: start;
         .show_photo{
-            height: 70vh 70vh;
+            min-height: 70vh;
         }
         .show_title{
             color: $myWhite;
             margin-top: 1vh;
+            height: 3vh;
             text-align: center;
         }
         .show_description{
             color: $myWhite;
-            margin-top: 1vh;
+            height: 15vh;
+            margin-top: 1.5vh;
+            font-size: .75rem;
             text-align: justify;
         }
     }
@@ -195,6 +198,11 @@ footer{
     }    
 }
 @media (max-width:786.01px) {
+    main-nextShows{
+        .show{
+            margin-bottom: 10vh;
+        }
+    }
     footer{
         .nav{
             display: none;
