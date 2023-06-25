@@ -1,4 +1,9 @@
 @import "colors";
+@import "index-main";
+@import "artists-main";
+@import "next-shows-main";
+@import "galery-main";
+@import "contact-main";
 
 body{
     background-color: black;
@@ -32,131 +37,6 @@ header{
                         font-size: 1.5rem;
                     }
         }
-    }
-}
-main{
-    .section-main{
-        margin: 1rem;
-        margin-left: 2vw;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        .img-main{
-            width: 90vw;
-        }
-        .text-afterlife{
-            color: $myWhite;
-            font-size: 1.5rem;
-            text-align: justify;
-        }
-    }
-}
-.main-artists{
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 5vh;
-    .artist{
-        display: flex;
-        flex-direction: column;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-bottom: 3vh;
-        align-items: center;
-        justify-content: center;
-        .artist_photo{
-            width: 50vw;
-            height: 60vh;
-            filter: grayscale(100%);
-            transition: filter 1s;
-                &:hover{
-                    filter: none;
-                } 
-        }
-        .artist_name{
-            margin-top: 1vh;
-            color: $myGray;
-            font-size: 2rem;
-            font-style: italic;
-        }
-        .artist_info{
-            margin-top: 1vh;
-            color: $myGray;
-            font-size: 1.5rem;
-            text-align: justify;
-        }
-}
-}
-.main-nextShows{
-    margin-left: 3vw;
-    margin-right: 3vw;
-    margin-bottom: 5vh;
-    display: grid;
-    grid-template-columns: 45vw 45vw;
-    .show{
-        width: 40vw;
-        height: 95vh;
-        margin: 2vw;
-        margin-bottom: 5vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        .show_photo{
-            height: 70vh;
-        }
-        .show_title{
-            color: $myWhite;
-            margin-top: 1vh;
-            height: 3vh;
-            text-align: center;
-        }
-        .show_description{
-            color: $myWhite;
-            height: 15vh;
-            margin-top: 1.5vh;
-            font-size: .75rem;
-            text-align: justify;
-        }
-    }
-}
-.main-galery{
-    display: grid;
-    grid-template-columns: 45vw 45vw;
-    row-gap: 5vh;
-    column-gap: 2.5vw;
-    .video{
-        width: 45vw;
-        height: 35vh;
-        margin-top: 4vh;
-        margin-right: 2vw;
-        margin-left: 2vw;
-        display: flex;
-        justify-content: center;
-    }
-}
-.main-contact{
-    margin: 5rem;
-    .contact-form{
-        outline-width: 2px;
-        display: flex;
-        justify-content: center;
-    }
-    .label-form{
-        color: $myWhite;
-        width: 90vw;
-        margin-top: 3vh;
-    }
-    .input-form{
-        width: 100%;
-        margin-bottom: 3vh;
-        color: $myWhite;
-    }
-    .legend-form{
-        color: $myWhite;
-        margin-bottom: 3vh;
-    }
-    .form_buttons{
-        display: flex;
-        justify-content: center
     }
 }
 footer{
@@ -198,11 +78,6 @@ footer{
     }    
 }
 @media (max-width:786.01px) {
-    main-nextShows{
-        .show{
-            margin-bottom: 10vh;
-        }
-    }
     footer{
         .nav{
             display: none;
@@ -224,89 +99,9 @@ footer{
             padding: 0px;
         }
     }
-    .section-main{
-        .text-afterlife{
-            width: 90vw;
-            .text{
-                font-size: 1rem;
-            }
-        }
-    }
-    .main-artists{
-        .artist{
-            .artist_name{
-                font-size: 1.75rem;
-            }
-            .artist_info{
-                font-size: 1rem;
-            }
-        }
-    }
-    .main-nextShows{
-        grid-template-columns: 80vw;
-        justify-content: center;
-        .show{
-            width: 80vw;
-            margin-left: 0px;
-            .show_photo{
-                width: 80vw;
-            }
-            .show_description{
-                font-size: 0.7rem;
-            }
-        }
-    }
-    .main-galery{
-        grid-template-columns: 80vw;
-        justify-content: center;
-        .video{
-            display: flex;
-            justify-content: center;
-            width: 80vw;
-        }
-    }
-    iframe{
-        width: 80vw;
-    }
-    .main-contact{
-        margin: 2rem;
-        .contact-form{
-            margin-left: 5vw;
-            width: 75vw;
-            display: flex;
-            .legend-form{
-                text-align: center;
-            }
-            .input-form{
-                width: 70vw;
-            }
-        }
-        
-    } 
 }
 @media (max-width: 320.01px){
     body{
         margin: auto;
-    }
-   
-    .section-main{
-        .text-afterlife{
-            .text{
-                font-size: 0.8rem;
-            }
-        }
-    }
-    .main-artists{
-        .artist{
-            .artist_photo{
-                height: 30vh;
-            }
-            .artist_name{
-                font-size: 1.5rem;
-            }
-            .artist_info{
-                font-size: 1rem;
-            }
-        }
     }
 }

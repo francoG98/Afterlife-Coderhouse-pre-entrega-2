@@ -1,0 +1,38 @@
+main{
+    .section-main{
+        margin: 1rem;
+        margin-left: 2vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .img-main{
+            width: 90vw;
+        }
+        .text-afterlife{
+            color: $myWhite;
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    }
+}
+@media (max-width:576.01px) {
+    main{
+        .section-main{
+        .text-afterlife{
+            width: 90vw;
+            .text{
+                font-size: 1rem;
+            }
+        }
+    }
+    }
+}
+@media (max-width: 320.01px){ 
+    .section-main{
+        .text-afterlife{
+            .text{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

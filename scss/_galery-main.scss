@@ -1,0 +1,29 @@
+.main-galery{
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    row-gap: 5vh;
+    column-gap: 2.5vw;
+    .video{
+        width: 45vw;
+        height: 35vh;
+        margin-top: 4vh;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width:576.01px) { 
+    .main-galery{
+        grid-template-columns: 80vw;
+        justify-content: center;
+        .video{
+            display: flex;
+            justify-content: center;
+            width: 80vw;
+        }
+    }
+    iframe{
+        width: 80vw;
+    }
+}

@@ -1,0 +1,43 @@
+.main-contact{
+    margin: 5rem;
+    .contact-form{
+        outline-width: 2px;
+        display: flex;
+        justify-content: center;
+    }
+    .label-form{
+        color: $myWhite;
+        width: 90vw;
+        margin-top: 3vh;
+    }
+    .input-form{
+        width: 100%;
+        margin-bottom: 3vh;
+        color: $myWhite;
+    }
+    .legend-form{
+        color: $myWhite;
+        margin-bottom: 3vh;
+    }
+    .form_buttons{
+        display: flex;
+        justify-content: center
+    }
+}
+@media (max-width:576.01px) { 
+    .main-contact{
+        margin: 2rem;
+        .contact-form{
+            margin-left: 5vw;
+            width: 75vw;
+            display: flex;
+            .legend-form{
+                text-align: center;
+            }
+            .input-form{
+                width: 70vw;
+            }
+        }
+        
+    }
+}
